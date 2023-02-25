@@ -14,10 +14,10 @@ public class TVUser {
 		TV tv1 = (TV)factory.getBean("tv");
 		TV tv2 = (TV)factory.getBean("tv");
 		TV tv3 = (TV)factory.getBean("tv");
-//		tv.powerOn();
-//		tv.volumeUp();
-//		tv.volumeDown();
-//		tv.powerOff();
+		tv1.powerOn();
+		tv1.volumeUp();
+		tv1.volumeDown();
+		tv1.powerOff();
 		
 		// 3. Spring 컨테이너를 종료한다.
 		factory.close();
