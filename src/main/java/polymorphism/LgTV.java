@@ -1,5 +1,8 @@
 package polymorphism;
 
+import org.springframework.stereotype.Component;
+
+@Component("tv") //미지정시 lgTV 
 public class LgTV implements TV {
 	
 	public LgTV() {
