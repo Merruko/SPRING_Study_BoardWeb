@@ -8,3 +8,15 @@ CREATE TABLE b_board (
 );
 
 SELECT * FROM b_board;
+
+
+CREATE TABLE b_users (
+	id VARCHAR2(8) PRIMARY KEY,
+    password VARCHAR2(8),
+    name VARCHAR2(20),
+    role VARCHAR2(5)
+);
+
+INSERT INTO b_users VALUES ('test','test123','kim','admin');
+
+SELECT * FROM b_users;
