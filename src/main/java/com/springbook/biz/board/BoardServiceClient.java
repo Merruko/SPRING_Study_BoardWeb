@@ -23,7 +23,7 @@ public class BoardServiceClient {
 		boardService.insertBoard(vo);
 		
 		// 4. 글 목록 검색 기능 테스트
-		List<BoardVO> boardList = boardService.getBoardList(vo);
+		List<BoardVO> boardList = boardService.getBoardList();
 		for(BoardVO board : boardList) {
 			System.out.println("---> "+ board.toString());
 		}

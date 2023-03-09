@@ -86,12 +86,12 @@ public class BoardDAO {
 			rs = stmt.executeQuery();
 			if (rs.next()) {
 				board = new BoardVO();
-				board.setSeq(rs.getInt("SEQ"));
-				board.setTitle(rs.getString("TITLE"));
-				board.setWriter(rs.getString("WRITER"));
-				board.setContent(rs.getString("CONTENT"));
-				board.setRegDate(rs.getDate("REGDATE"));
-				board.setCnt(rs.getInt("CNT"));
+				board.setSeq(rs.getInt("seq"));
+				board.setTitle(rs.getString("title"));
+				board.setWriter(rs.getString("writer"));
+				board.setContent(rs.getString("content"));
+				board.setRegDate(rs.getDate("regdate"));
+				board.setCnt(rs.getInt("cnt"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -102,7 +102,7 @@ public class BoardDAO {
 	}
 
 	// 글 목록 조회
-	public List<BoardVO> getBoardList(BoardVO vo) {
+	public List<BoardVO> getBoardList() {
 		System.out.println("===> JDBC로 getBoardList() 기능 처리");
 		List<BoardVO> boardList = new ArrayList<BoardVO>();
 		try {
@@ -111,12 +111,12 @@ public class BoardDAO {
 			rs = stmt.executeQuery();
 			while (rs.next()) {
 				BoardVO board = new BoardVO();
-				board.setSeq(rs.getInt("SEQ"));
-				board.setTitle(rs.getString("TITLE"));
-				board.setWriter(rs.getString("WRITER"));
-				board.setContent(rs.getString("CONTENT"));
-				board.setRegDate(rs.getDate("REGDATE"));
-				board.setCnt(rs.getInt("CNT"));
+				board.setSeq(rs.getInt("seq"));
+				board.setTitle(rs.getString("title"));
+				board.setWriter(rs.getString("writer"));
+				board.setContent(rs.getString("content"));
+				board.setRegDate(rs.getDate("regdate"));
+				board.setCnt(rs.getInt("cnt"));
 				boardList.add(board);
 			}
 		} catch (Exception e) {
