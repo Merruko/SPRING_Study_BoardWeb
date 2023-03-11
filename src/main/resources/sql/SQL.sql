@@ -9,6 +9,8 @@ CREATE TABLE b_board (
 
 SELECT * FROM b_board;
 
+DELETE FROM b_board;
+
 
 CREATE TABLE b_users (
 	id VARCHAR2(8) PRIMARY KEY,
