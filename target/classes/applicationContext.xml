@@ -18,16 +18,16 @@
 	
 	<aop:config>
 		<aop:pointcut id="allPointcut" expression="execution(* com.springbook.biz..*Impl.*(..))"/>
-    <!-- <aop:aspect ref="before"> -->
-    <!-- <aop:aspect ref="afterReturning"> -->
-    <!-- <aop:aspect ref="afterThrowing"> -->
-    <!-- <aop:aspect ref="after"> -->
-     <aop:aspect ref="around">
-		<!-- <aop:before pointcut-ref="allPointcut" method="beforeLog"/> -->
-		<!-- <aop:after-returning pointcut-ref="allPointcut" method="afterLog"/> -->
-	    <!-- <aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog"/> -->
-	    <!-- <aop:after pointcut-ref="allPointcut" method="finallyLog"/> -->
-	     <aop:around pointcut-ref="allPointcut" method="aroundLog"/> 
+   		<aop:aspect ref="before">
+    	<!--<aop:aspect ref="afterReturning">-->
+    	<!--<aop:aspect ref="afterThrowing">-->
+    	<!--<aop:aspect ref="after">-->
+    	<!--<aop:aspect ref="around">-->
+			<aop:before pointcut-ref="allPointcut" method="beforeLog"/>
+			<!--<aop:after-returning pointcut-ref="allPointcut" method="afterLog" returning="returnObj"/>-->
+			<!--<aop:after-throwing pointcut-ref="allPointcut" method="exceptionLog" throwing="exceptObj"/>-->
+			<!--<aop:after pointcut-ref="allPointcut" method="finallyLog"/>-->
+			<!--<aop:around pointcut-ref="allPointcut" method="aroundLog"/> -->
 		</aop:aspect>
 	</aop:config>
 
