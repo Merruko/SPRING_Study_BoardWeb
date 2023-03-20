@@ -33,7 +33,7 @@ public class BoardServiceImpl implements BoardService {
 		return boardDAO.getBoard(vo);
 	}
 
-	public List<BoardVO> getBoardList() {
-		return boardDAO.getBoardList();
+	public List<BoardVO> getBoardList(BoardVO vo) {
+		return boardDAO.getBoardList(vo);
 	}	
 }

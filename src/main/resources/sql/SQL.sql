@@ -19,6 +19,6 @@ CREATE TABLE b_users (
     role VARCHAR2(5)
 );
 
-INSERT INTO b_users VALUES ('test','test123','kim','admin');
+INSERT INTO b_users VALUES ('test','test123','kim','Admin');
 
 SELECT * FROM b_users;
