@@ -1,5 +1,5 @@
 package com.springbook.biz.board.impl;
-
+/*
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -126,4 +126,4 @@ public class BoardDAO {
 		}
 		return boardList;
 	}
-}
+}*/
