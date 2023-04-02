@@ -29,7 +29,7 @@ public class DispatcherServlet extends HttpServlet {
 	}
 	
 	private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 1.클라이언트의 요청 path 정보를 추출한다.
+		// 1. 클라이언트의 요청 path 정보를 추출한다.
 		String uri = request.getRequestURI();
 		String path = uri.substring(uri.lastIndexOf("/"));
 		
