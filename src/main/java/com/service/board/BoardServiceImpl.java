@@ -10,7 +10,7 @@ import com.vo.board.BoardVO;
 @Service
 public class BoardServiceImpl implements BoardService {
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAOSpring boardDAO;
 
 	public void insertBoard(BoardVO vo) {
 		boardDAO.insertBoard(vo);
