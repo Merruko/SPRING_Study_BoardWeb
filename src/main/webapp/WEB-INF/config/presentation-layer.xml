@@ -6,8 +6,10 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-
-	<context:component-scan base-package="com.controller" />
+		
+	<!-- 2 : 이전에 applicationContext 스캔하고 옴 -->
+	<!-- 컨트롤러 빈 생성 -->
+	<context:component-scan base-package="com.biz.controller" />
 	
 	<!-- 파일 업로드 설정 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
