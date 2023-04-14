@@ -8,6 +8,7 @@
 	<!-- Alias 설정 -->
 	<typeAliases>
 		<typeAlias alias="board" type="com.biz.vo.board.BoardVO" />
+		<typeAlias alias="boardResult" type="com.biz.vo.board.BoardVO" />
 		<typeAlias alias="user" type="com.biz.vo.user.UserVO" />
 	</typeAliases>
 	

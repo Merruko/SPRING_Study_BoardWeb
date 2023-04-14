@@ -16,7 +16,6 @@
 	</properties>
 	
 	<dependencies>
-	
 		<!-- Oracle 데이터베이스 -->
 		<dependency>
 	   		<groupId>com.oracle.database.jdbc</groupId>
@@ -155,16 +154,9 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-		</dependency>
-	
-		<!-- Test -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.7</version>
-			<scope>test</scope>
-		</dependency>        
+		</dependency>      
 	</dependencies>
+	
     <build>
         <plugins>
             <plugin>
@@ -208,4 +200,5 @@
 			</plugin>
         </plugins>
     </build>
+    
 </project>
